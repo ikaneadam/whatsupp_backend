@@ -1,0 +1,8 @@
+.github
+node_modules
+skyhookdb
+.env.example
+.gitignore
+compose.yaml
+Dockerfile
+README.md
