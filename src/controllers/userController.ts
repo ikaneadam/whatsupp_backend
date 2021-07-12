@@ -18,6 +18,7 @@ class UserController {
         this.router.post(this.pathRegister, this.service.registerUser)
         this.router.use(this.path, tokenVerification)
         this.router.get(this.path, this.service.getUser)
+        this.router.get(this.path + "/chats", this.service.getUserChats)
         this.router.delete(this.path, this.service.deleteUser)
     }
 }

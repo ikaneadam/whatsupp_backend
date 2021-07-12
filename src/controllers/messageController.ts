@@ -15,7 +15,6 @@ class MessageController {
         this.router.use(this.path, tokenVerification)
         this.router.get(this.path, this.service.getMessage)
         this.router.post(this.path, this.service.postMessage)
-        this.router.delete(this.path, this.service.deleteMessage)
     }
 }
 

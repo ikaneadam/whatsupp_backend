@@ -19,8 +19,19 @@ class UserService {
             let user = await this.dao.getUser(req.params.id)
             res.json(user)
         }
-
     }
+
+    public getUserChats =  async (req: Request, res: Response) => {
+        if(req.params.id == undefined) return res.status(400).send("user uuid undefined")
+        try {
+            let user = await this.dao.getChatsFromUser(req.params.id);
+            res.json(user)
+        } catch (error) {
+            res.status(500);
+        }
+    }
+
+
 
     private loginSchema = {
         "username": joi.string().min(6).required(),

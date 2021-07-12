@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="" />
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/service/chatService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/friendshipService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sockets/friendshipSocket.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/FriendController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MessageModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/chatController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/chatController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/messageController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/messageController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/userController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/userController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/chatDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/chatDAO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/messageDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/messageDAO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/userDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/userDAO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/connectionService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/connectionService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/messageService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/messageService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/userService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/userService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sockets/chatSocket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sockets/chatSocket.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +50,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="310143ba-994e-41d6-806c-82d418e9b382" />
   </component>
   <component name="ProjectId" id="1v015m111VTe33ZKrwAM7HK9zw9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,18 +85,40 @@
       <updated>1625684011168</updated>
       <workItem from="1625684012240" duration="10504000" />
       <workItem from="1625744539781" duration="3534000" />
-      <workItem from="1625781006784" duration="1626000" />
+      <workItem from="1625781006784" duration="1916000" />
+      <workItem from="1625830302220" duration="4580000" />
+      <workItem from="1626083722820" duration="9720000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="262" key="FileChooserDialogImpl" timestamp="1625684264290">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="262" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1625684264290" />
+    <state x="800" y="400" key="Github.ShareDialog" timestamp="1625782855040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="800" y="400" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625782855040" />
+    <state x="777" y="218" key="Github.UntrackedFilesDialog" timestamp="1625782876576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="218" key="Github.UntrackedFilesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625782876576" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625698068594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -73,9 +135,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625698068594" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1625684066451">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1625782844977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625684066451" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625782844977" />
   </component>
 </project>

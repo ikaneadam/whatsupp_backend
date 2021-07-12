@@ -1,15 +1,21 @@
-import {Server, Socket} from "socket.io";
-import UserDAO from "../dao/userDAO";
+import MessageDAO from "../dao/messageDAO";
+import {Request, Response} from "express";
 
-class connectionService {
-    public dao: UserDAO
+class MessageService {
+    public dao: MessageDAO
 
     constructor() {
-        this.dao = new UserDAO();
+        this.dao = new MessageDAO();
     }
+
+    public getMessage =  async (req: Request, res: Response) => {
+
+    }
+
+
 
 
 
 }
 
-export default connectionService
+export default MessageService
