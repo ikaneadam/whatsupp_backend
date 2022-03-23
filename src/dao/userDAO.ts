@@ -23,8 +23,8 @@ class UserDAO {
         return rows[0];
     }
 
-    public async insertUser(username: string, password: string, friendShipCode: string) {
-        const {rows} = await this.db.query(`INSERT INTO Users (username , password, friendShipCode) VALUES ('${username}', '${password}','${friendShipCode}');`, []);
+    public async insertUser(username: string) {
+        const {rows} = await this.db.query(`INSERT INTO Users (username) VALUES ('${username}');`, []);
         return rows[0];
     }
     public async getUsername(username: string) {

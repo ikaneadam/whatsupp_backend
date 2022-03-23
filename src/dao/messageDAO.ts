@@ -8,12 +8,10 @@ class MessageDAO {
     }
 
 
-    public async insertMessage(content: string, chatUUID: string, username: string) {
-        const currentTime = new Date().toLocaleString();
-        const {rows} = await this.db.query(`INSERT INTO Message (content, chatUUID, username, TimeStamp) VALUES ('${content}', ${chatUUID}, '${username}', '${currentTime}');`, []);
-        return rows[0];
+    public async getOpenMessagesFromUser(Username: string){
+        const { rows } = await this.db.query('SELECT uuid, username, friendShipCode FROM Users', []);
+        return rows;
     }
-
 
 }
 

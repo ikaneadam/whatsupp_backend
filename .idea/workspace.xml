@@ -20,23 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/service/chatService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/friendshipService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sockets/friendshipSocket.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/createChatSchema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/createChatService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sockets/createChatSocket.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/queries/UserQueries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/FriendController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MessageModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/chatController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/chatController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/messageController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/messageController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/chatController.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/messageController.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/userController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/userController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/chatDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/chatDAO.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/messageDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/messageDAO.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/userDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/userDAO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/jwtTokenCheck.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MessageModel.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/connectionService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/connectionService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/messageService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/messageService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/chatService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/connectionService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/friendshipService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/messageService.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/userService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/userService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sockets/chatSocket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sockets/chatSocket.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sockets/chatSocket.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sockets/friendshipSocket.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/databaseConnector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/databaseConnector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +62,18 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="310143ba-994e-41d6-806c-82d418e9b382" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1v015m111VTe33ZKrwAM7HK9zw9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,12 +84,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dao" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="F:\ikfram\backend\whatsupp_backend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="G:\schoolbestandenSSD\whatsupp_backend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\schoolbestandenSSD\whatsupp_backend\src\dao" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\ikfram\backend\whatsupp_backend" />
     </key>
@@ -88,6 +110,10 @@
       <workItem from="1625781006784" duration="1916000" />
       <workItem from="1625830302220" duration="4580000" />
       <workItem from="1626083722820" duration="9720000" />
+      <workItem from="1647958403378" duration="2834000" />
+      <workItem from="1648039774536" duration="678000" />
+      <workItem from="1648040761511" duration="1817000" />
+      <workItem from="1648045385500" duration="13466000" />
     </task>
     <servers />
   </component>
@@ -104,40 +130,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2660" y="262" key="FileChooserDialogImpl" timestamp="1625684264290">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2660" y="262" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1625684264290" />
-    <state x="800" y="400" key="Github.ShareDialog" timestamp="1625782855040">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="800" y="400" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625782855040" />
-    <state x="777" y="218" key="Github.UntrackedFilesDialog" timestamp="1625782876576">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="777" y="218" key="Github.UntrackedFilesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625782876576" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1625698068594">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625698068594" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1625698068594">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625698068594" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1625698068594">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625698068594" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1625698068594">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625698068594" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1625782844977">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1625782844977" />
   </component>
 </project>

@@ -4,10 +4,7 @@ import express from "express";
 import {Server, Socket} from "socket.io";
 
 import UserController from "./controllers/userController";
-import ChatController from "./controllers/chatController";
-import MessageController from "./controllers/messageController";
-
-import chatSocket from "./sockets/chatSocket";
+import createChatSocket from "./sockets/createChatSocket";
 
 const server = new BackendApp({
     port: 5000,
@@ -17,15 +14,14 @@ const server = new BackendApp({
         express.urlencoded({ extended: true })
     ],
     controllers: [
-        new UserController(),
-        new ChatController(),
-        new MessageController()
+        new UserController()
     ]
 })
 
 
-const io:Server = new Server(server.server,{cors: {origin: String(process.env.FRONT_END_URL)}});
+const io:Server = new Server(server.server,{cors: {origin:"http://localhost:4200"}});
 
-io.on("connection", (socket:Socket) => {
-    new chatSocket(io, socket);
+io.on("connection", (Socket: Socket) => {
+    new createChatSocket(io, Socket)
 })
+

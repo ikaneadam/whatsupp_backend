@@ -1,32 +1,34 @@
 import databaseConnector from "../util/databaseConnector";
 
-class UserDAO {
+class ChatDAO {
 
     private db: databaseConnector
     constructor() {
         this.db = new databaseConnector()
     }
 
-    public async getChat(chatUUID: string) {
-        const { rows } = await this.db.query('SELECT * FROM Chats WHERE UUID = $1;', [chatUUID]);
-        return rows[0];
+
+    public async createChat(chatName: string){
+        const createdChat = await this.db.query(`INSERT INTO Chats (chatName) VALUES ('${chatName}') RETURNING id`, []);
+        const chatUUID = createdChat.rows[0]
+        await this.db.query(`INSERT INTO Chats (chatName) VALUES ('${chatName}') RETURNING id`, []);
     }
 
-    public async getChats() {
-        const { rows } = await this.db.query('SELECT * FROM Chats;', []);
-        return rows;
-    }
 
-    public async getMessagesFromChat(chatUUID: string) {
-        const { rows } = await this.db.query(`select * from Message where chatUUID = ${chatUUID}`, []);
-        return rows;
-
-    }
-
-    public async insertChat(chatName: string, createdDate: string, isGroupsChat: boolean) {
-        const {rows} = await this.db.query(`INSERT INTO Chats (chatName, createdDate, isGroupsChat) VALUES ('${chatName}', '${createdDate}', ${isGroupsChat});`, []);
-        return rows[0];
-    }
 }
 
-export default UserDAO
+// CREATE TABLE UsersChats (
+//     UUID uuid DEFAULT uuid_generate_v4 (),
+//     userUUID uuid NOT NULL,
+//     chatUUID uuid NOT NULL,
+//     CONSTRAINT UsersChats_pk PRIMARY KEY (UUID)
+// );
+//
+// CREATE TABLE Chats(
+//     UUID uuid DEFAULT uuid_generate_v4 (),
+//     chatName varchar(255) NOT NULL,
+//     CONSTRAINT Chats_pk PRIMARY KEY (UUID)
+// );
+export default ChatDAO
+
+
