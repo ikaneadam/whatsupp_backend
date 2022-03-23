@@ -1,18 +1,6 @@
-import {Pool} from 'pg';
-const pool = new Pool({
-    user: "postgres",
-    host: "db-persist",
-    database: "postgres",
-    password: "password",
-    port: 5432
-})
+import {Sequelize} from "sequelize";
 
-class DatabaseConnector{
-    public query(text: any, params:any){
-        return pool.query(text, params)
-    }
-}
+const db  = new Sequelize('postgres://postgres:password@db-persist:5432/postgres')
 
-export default DatabaseConnector
-
+export {db}
 

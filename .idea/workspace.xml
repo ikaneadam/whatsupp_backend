@@ -19,34 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/createChatSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/createChatService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sockets/createChatSocket.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/queries/UserQueries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="MAAK SHI ORM">
+      <change afterPath="$PROJECT_DIR$/src/Model/Chat.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/User.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/chatController.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/messageController.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/userController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/userController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/chatDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/chatDAO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/messageDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/messageDAO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/userDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/userDAO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/jwtTokenCheck.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/MessageModel.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/chatService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/connectionService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/friendshipService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/messageService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/createChatSchema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backendApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backendApp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/chatDAO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/messageDAO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/userDAO.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/createChatService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/createChatService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/userService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/userService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sockets/chatSocket.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sockets/friendshipSocket.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/databaseConnector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/databaseConnector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/queries/UserQueries.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,8 +102,16 @@
       <workItem from="1647958403378" duration="2834000" />
       <workItem from="1648039774536" duration="678000" />
       <workItem from="1648040761511" duration="1817000" />
-      <workItem from="1648045385500" duration="13466000" />
+      <workItem from="1648045385500" duration="17751000" />
     </task>
+    <task id="LOCAL-00001" summary="MAAK SHI ORM">
+      <created>1648066696722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648066696722</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,5 +127,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MAAK SHI ORM" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAAK SHI ORM" />
   </component>
 </project>
