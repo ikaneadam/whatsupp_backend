@@ -5,7 +5,6 @@ import {Server, Socket} from "socket.io";
 
 import UserController from "./controllers/userController";
 import createChatSocket from "./sockets/createChatSocket";
-
 const server = new BackendApp({
     port: 5000,
     middleWares: [
@@ -24,4 +23,5 @@ const io:Server = new Server(server.server,{cors: {origin:"http://localhost:4200
 io.on("connection", (Socket: Socket) => {
     new createChatSocket(io, Socket)
 })
+
 

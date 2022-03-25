@@ -26,6 +26,7 @@
 --     username varchar(255),
 --     isReceived varchar(1)
 --     TimeStamp text,
+
 --     CONSTRAINT Message_pk PRIMARY KEY (UUID)
 -- );
 --

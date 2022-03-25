@@ -1,2 +1,6 @@
-ore# Project exclude paths
-/node_modules/
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
