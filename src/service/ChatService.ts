@@ -25,7 +25,7 @@ class ChatService {
             const user = await this.chatDao.getUser(username)
             const chats = await this.chatDao.getUserChats(user.UUID)
             this.socket.emit(`receiveChats-${username}`,chats)
-            console.log(`receiveChats-${username}`)
+            console.log(chats)
         })
     }
 
@@ -33,7 +33,8 @@ class ChatService {
         this.socket.on("createChat", async (user_requester, user_receiver,chatName) => {
             const requester = await this.chatDao.getUser(user_requester)
             const receiver = await this.chatDao.getUser(user_receiver)
-            await this.chatDao.createChat(requester, receiver, chatName)
+            const chat = await this.chatDao.createChat(requester, receiver, chatName)
+            this.socket.emit(`receiveChat-${user_requester}`, chat)
         })
     }
 
@@ -42,14 +43,14 @@ class ChatService {
             const requester = await this.chatDao.getUser(user_requester)
             const receiver = await this.chatDao.getUser(user_receiver)
             await this.chatDao.createMessage(requester, receiver, message, chatUUID)
-            this.socket.to(chatUUID).emit("receiveMessage", message)
+            this.socket.emit(`receiveMessage-${chatUUID}`, message)
         })
     }
 
     public getOfflineMessagesSocket(){
         this.socket.on("getOfflineMessages", async (username) => {
             const messages = await this.chatDao.getOfflineMessages(username)
-            this.socket.emit("offlineMessages",messages)
+            this.socket.emit(`offlineMessages-${username}`,messages)
             await this.chatDao.setMessagesReceived(messages)
         })
     }

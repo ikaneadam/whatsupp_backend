@@ -14,7 +14,7 @@ export class Chat {
     @JoinTable()
     users: User[];
 
-    @OneToMany(() => Message, Message => Message.chat)
+    @OneToMany(() => Message, Message => Message.chat,{ eager : true})
     Messages: Message[];
 
 }

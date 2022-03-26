@@ -2,7 +2,7 @@ import {AppDataSource} from "../data-source";
 import {User} from "../entity/User";
 import {Message} from "../entity/Message";
 import {Chat} from "../entity/Chat";
-import {Repository, Connection, DataSource} from "typeorm";
+import {Repository} from "typeorm";
 class ChatDAO {
     private userRepository: Repository<User>
     private messageRepository: Repository<Message>
@@ -25,29 +25,13 @@ class ChatDAO {
 //todo teveel parameters
     public async createMessage(requester: User, receiver: User, content: string, chatUUID: string){
         const message = new Message()
-        message.chat = await this.getChat(chatUUID)
         message.content = content
+        message.chat = await this.getChat(chatUUID)
         message.isReceived = false
         message.TimeStamp = String(this.getLocalTime())
         message.userName = requester.username
         message.userNameReceiver = receiver.username
         await this.messageRepository.save(message)
-        await this.addMessageToChat(message, chatUUID)
-    }
-
-    //todo util
-    public getLocalTime(){
-         return Date.now();
-    }
-
-    public async addUserToChat(user: User, chatUUid: string){
-        const chat: Chat = await this.chatRepository.findOne({ where: { UUID: chatUUid } })
-        if (chat.users = undefined){
-            chat.users = [user]
-        }
-
-        chat.users = chat.users.concat([user]);
-        await this.chatRepository.save(chat);
     }
 
     public async addChatToUser(chat: Chat, userUUid: string){
@@ -60,10 +44,9 @@ class ChatDAO {
         await this.userRepository.save(user);
     }
 
-    public async addMessageToChat(message: Message, chatUUID: string){
-        const chat: Chat = await this.getChat(chatUUID);
-        chat.Messages = chat.Messages.concat([message]);
-        await this.chatRepository.save(chat);
+    //todo util
+    public getLocalTime(){
+         return Date.now();
     }
 
     public async doesUserExist(Username: string): Promise<Boolean> {
@@ -76,7 +59,7 @@ class ChatDAO {
     }
 
     public async getChat(UUID: string): Promise<Chat> {
-        return await this.chatRepository.findOne({ where: { UUID: UUID } })
+        return await this.chatRepository.findOne({ where: { UUID: UUID }})
     }
 
     public async getMessage(UUID: string): Promise<Message> {
@@ -105,7 +88,16 @@ class ChatDAO {
     }
 
     public async getUserChats(userUUID: string): Promise<Chat[]>{
-        return await AppDataSource.getRepository(Chat).createQueryBuilder("chat").innerJoinAndSelect("c.users", "u").where("user.UUID= :userUUID").getMany();
+        const chats = await AppDataSource.getRepository(Chat)
+            .createQueryBuilder("chat")
+            .leftJoin("chat.users", "user")
+            .where(`user.UUID= :id`,{id: userUUID})
+            .getMany();
+        const chatWithMessages: Chat[] = []
+        for(let chat of chats){
+            chatWithMessages.push(await this.getChat(chat.UUID))
+        }
+        return chatWithMessages
     }
 }
 

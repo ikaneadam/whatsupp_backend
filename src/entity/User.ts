@@ -9,7 +9,7 @@ export class User {
     @Column({ unique: true })
     username: string
 
-    @ManyToMany(() => Chat)
+    @ManyToMany(() => Chat,{ eager : true})
     @JoinTable()
     chats: Chat[];
 }

@@ -19,21 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="getuserchatisn'tworkingyet">
-      <change afterPath="$PROJECT_DIR$/src/dao/chatDAO.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ChatService.ts" afterDir="false" />
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="everything works but it isn't using rooms yet">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backendApp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/backendApp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/userController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/userController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/chatDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/chatDAO.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Chat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Chat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Message.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/createChatService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/userService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/userService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sockets/createChatSocket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sockets/ChatSocket.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ChatService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ChatService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +53,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1v015m111VTe33ZKrwAM7HK9zw9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -128,10 +124,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MAAK SHI ORM" />
     <MESSAGE value="getuserchatisn'tworkingyet" />
-    <option name="LAST_COMMIT_MESSAGE" value="getuserchatisn'tworkingyet" />
+    <MESSAGE value="everything works but it isn't using rooms yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="everything works but it isn't using rooms yet" />
   </component>
 </project>
