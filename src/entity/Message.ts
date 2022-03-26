@@ -1,4 +1,4 @@
-import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from 'typeorm'
+import {BaseEntity, Column, Entity, ManyToOne, PrimaryGeneratedColumn} from 'typeorm'
 import {Chat} from "./Chat";
 
 @Entity('message')
@@ -10,10 +10,10 @@ export class Message {
     content: string
 
     @Column({nullable: false})
-    chatUUID: string
+    userName: string
 
     @Column({nullable: false})
-    userName: string
+    userNameReceiver: string
 
     @Column()
     isReceived: boolean

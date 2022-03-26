@@ -53,22 +53,6 @@ class UserService {
         user.username = username
         return await AppDataSource.manager.save(user)
     }
-
-    public wrmnetjes =  async (req: Request, res: Response) => {
-        const userRepository = AppDataSource.getRepository(User)
-        const messageRepository = AppDataSource.getRepository(Message)
-        const chatRepository = AppDataSource.getRepository(Chat)
-        const user = new User()
-        user.username = "test"
-        await AppDataSource.manager.save(user)
-        res.status(200).send(user)
-        // const chat = new Chat()
-        // chat.chatName = "name"
-        // chat.users = [user]
-        // await AppDataSource.manager.save(chat)
-        //
-        // console.log(chat)
-    }
 }
 
 export default UserService

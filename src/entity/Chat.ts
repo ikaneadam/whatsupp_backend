@@ -1,4 +1,4 @@
-import {Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn} from 'typeorm'
+import {BaseEntity, Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn} from 'typeorm'
 import {User} from "./User";
 import {Message} from "./Message";
 
@@ -7,7 +7,7 @@ export class Chat {
     @PrimaryGeneratedColumn('uuid')
     UUID: string;
 
-    @Column({ unique: true })
+    @Column()
     chatName: string
 
     @ManyToMany(() => User)
@@ -16,4 +16,5 @@ export class Chat {
 
     @OneToMany(() => Message, Message => Message.chat)
     Messages: Message[];
+
 }
