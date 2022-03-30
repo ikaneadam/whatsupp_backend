@@ -19,13 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="everything works but it isn't using rooms yet">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="getuserchatisn'tworkingyet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/chatDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/chatDAO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Chat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Chat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/User.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/ChatService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ChatService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +98,8 @@
       <workItem from="1648045385500" duration="17751000" />
       <workItem from="1648149674605" duration="7691000" />
       <workItem from="1648307036533" duration="13379000" />
+      <workItem from="1648545378343" duration="3458000" />
+      <workItem from="1648639414066" duration="3087000" />
     </task>
     <task id="LOCAL-00001" summary="MAAK SHI ORM">
       <created>1648066696722</created>
@@ -124,7 +124,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MAAK SHI ORM" />

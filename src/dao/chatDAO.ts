@@ -22,7 +22,7 @@ class ChatDAO {
         await this.chatRepository.save(chat)
         return chat
     }
-//todo teveel parameters
+    //todo teveel parameters
     public async createMessage(requester: User, receiver: User, content: string, chatUUID: string){
         const message = new Message()
         message.content = content
@@ -32,6 +32,7 @@ class ChatDAO {
         message.userName = requester.username
         message.userNameReceiver = receiver.username
         await this.messageRepository.save(message)
+        return message
     }
 
     public async addChatToUser(chat: Chat, userUUid: string){

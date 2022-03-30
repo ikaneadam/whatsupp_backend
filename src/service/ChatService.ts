@@ -23,7 +23,9 @@ class ChatService {
     public getAllChatsSocket() {
         this.socket.on("getChats", async (username) => {
             const user = await this.chatDao.getUser(username)
+            console.log(username)
             const chats = await this.chatDao.getUserChats(user.UUID)
+            console.log(chats)
             this.socket.emit(`receiveChats-${username}`,chats)
             console.log(chats)
         })
@@ -42,8 +44,8 @@ class ChatService {
         this.socket.on("sendMessage", async (user_requester, user_receiver,chatUUID, message) => {
             const requester = await this.chatDao.getUser(user_requester)
             const receiver = await this.chatDao.getUser(user_receiver)
-            await this.chatDao.createMessage(requester, receiver, message, chatUUID)
-            this.socket.emit(`receiveMessage-${chatUUID}`, message)
+            const insertedMessage = await this.chatDao.createMessage(requester, receiver, message, chatUUID)
+            this.socket.emit(`receiveMessage-${chatUUID}`, insertedMessage)
         })
     }
 
