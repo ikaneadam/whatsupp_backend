@@ -3,11 +3,10 @@ import cors from "cors";
 import express from "express";
 import {Server, Socket} from "socket.io";
 import { instrument } from "@socket.io/admin-ui"
-import { createServer } from "http"
 
 import UserController from "./controllers/userController";
-import ChatSocket from "./sockets/ChatSocket";
 import chatSocket from "./sockets/ChatSocket";
+
 const server = new BackendApp({
     port: 5000,
     middleWares: [

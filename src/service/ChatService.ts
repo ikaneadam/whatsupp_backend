@@ -36,7 +36,7 @@ class ChatService {
             const requester = await this.chatDao.getUser(user_requester)
             const receiver = await this.chatDao.getUser(user_receiver)
             const chat = await this.chatDao.createChat(requester, receiver, chatName)
-            this.socket.emit(`receiveChat-${user_requester}`, chat)
+            this.socket.emit(`receiveChat-${user_receiver}`, chat)
         })
     }
 
