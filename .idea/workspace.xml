@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="createChat emits tot reivechat">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-source.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-source.ts" afterDir="false" />
-    </list>
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="createChat emits tot reivechat" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +31,9 @@
         <option value="TypeScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="yosylvio" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -77,6 +76,23 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\schoolbestandenSSD\whatsupp_backend\src\dao" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,6 +170,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="629" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1648718850531" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1648816666568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648816666568" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1648816666567">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648816666567" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1648816666566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648816666566" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1648816666568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648816666568" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1648718689961">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
