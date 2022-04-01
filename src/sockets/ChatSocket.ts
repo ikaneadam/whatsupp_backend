@@ -1,16 +1,16 @@
-import connectionService from "../service/connectionService"
+import ChatService from "../service/ChatService"
 import {Server, Socket} from "socket.io";
 
 class chatSocket {
-    private service: connectionService;
+    private service: ChatService;
 
     constructor(io: Server, socket: Socket) {
-        this.service = new connectionService(io, socket);
+        this.service = new ChatService(io, socket);
         this.sockets();
     }
 
     public sockets(){
-        this.service.listenToChat();
+        this.service.chatSockets();
     }
 }
 

@@ -1,20 +1,20 @@
 import express from "express";
 import {Express} from 'express-serve-static-core';
 import { Server } from "http";
-
+import { AppDataSource } from "./data-source"
 
 class BackendApp {
     public app: Express
     public port: number
     public server: Server
     constructor(appInit: { port: number; controllers: any; middleWares: any;}) {
-
         this.app = express()
         this.port = appInit.port
-
         this.middlewares(appInit.middleWares)
         this.routes(appInit.controllers)
         this.server = this.listen();
+        AppDataSource.initialize().then(async () => {}).catch(error => console.log(error))
+
     }
 
     private middlewares(middleWares: { forEach: (arg0: (middleWare: any) => void) => void; }) {

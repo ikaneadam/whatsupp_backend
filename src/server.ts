@@ -2,12 +2,10 @@ import BackendApp from "./backendApp";
 import cors from "cors";
 import express from "express";
 import {Server, Socket} from "socket.io";
+import { instrument } from "@socket.io/admin-ui"
 
 import UserController from "./controllers/userController";
-import ChatController from "./controllers/chatController";
-import MessageController from "./controllers/messageController";
-
-import chatSocket from "./sockets/chatSocket";
+import chatSocket from "./sockets/ChatSocket";
 
 const server = new BackendApp({
     port: 5000,
@@ -17,15 +15,21 @@ const server = new BackendApp({
         express.urlencoded({ extended: true })
     ],
     controllers: [
-        new UserController(),
-        new ChatController(),
-        new MessageController()
+        new UserController()
     ]
 })
 
 
-const io:Server = new Server(server.server,{cors: {origin: String(process.env.FRONT_END_URL)}});
+const io:Server = new Server(server.server,{cors: {origin: "*"}});
 
 io.on("connection", (socket:Socket) => {
     new chatSocket(io, socket);
 })
+
+instrument(io, {
+    auth: false
+});
+
+
+
+
