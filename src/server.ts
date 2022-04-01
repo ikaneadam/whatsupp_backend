@@ -20,16 +20,11 @@ const server = new BackendApp({
 })
 
 
-const io:Server = new Server(server.server,{cors: {origin: "*"}});
-
-io.on("connection", (socket:Socket) => {
-    new chatSocket(io, socket);
-})
-
-instrument(io, {
-    auth: false
-});
-
+// const io:Server = new Server(server.server,{cors: {origin: "*"}});
+//
+// io.on("connection", (socket:Socket) => {
+//     new chatSocket(io, socket);
+// })
 
 
 
