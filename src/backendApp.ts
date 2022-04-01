@@ -34,7 +34,7 @@ class BackendApp {
     }
 
     public listen() {
-        const server = this.app.listen(this.port)
+        const server = this.app.listen(this.port,"0.0.0.0")
         console.log(`Server listening on http://localhost:${this.port}`)
         return server
     }
