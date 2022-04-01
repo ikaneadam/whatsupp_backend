@@ -6,6 +6,7 @@
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "build": "tsc -p ./",
+      "start:cli": "ts-node src/server.ts",
       "start": "nodemon src/server.ts",
       "start:docker": "nodemon -L src/server.ts"
    },
