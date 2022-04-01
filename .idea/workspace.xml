@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="removed build command" />
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="changed hostname in app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,13 +38,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="yosylvio" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="7b3315a1-de5e-4efe-858f-2c1f0d84f714" />
+    <option name="defaultAccountId" value="310143ba-994e-41d6-806c-82d418e9b382" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,7 +64,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dao" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
-    <property name="ts.external.directory.path" value="D:\schoolBestanden\whatsupp_backend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="G:\schoolbestandenSSD\whatsupp_backend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -77,7 +77,7 @@
       <recent name="G:\schoolbestandenSSD\whatsupp_backend\src\dao" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -88,8 +88,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -147,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648816973428</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed hostname in app">
+      <created>1648822032347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648822032347</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +181,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MAAK SHI ORM" />
@@ -171,44 +188,7 @@
     <MESSAGE value="everything works but it isn't using rooms yet" />
     <MESSAGE value="createChat emits tot reivechat" />
     <MESSAGE value="removed build command" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed build command" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1648718850531">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1648718850531" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1648718689961">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1648718689961" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1648816975496">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1648816975496" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1648744563613">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1648744563613" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1648718805011">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1648718805011" />
+    <MESSAGE value="changed hostname in app" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed hostname in app" />
   </component>
 </project>
