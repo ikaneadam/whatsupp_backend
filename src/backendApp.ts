@@ -12,9 +12,7 @@ class BackendApp {
         this.port = appInit.port
         this.middlewares(appInit.middleWares)
         this.routes(appInit.controllers)
-        this.server = this.listen();
         AppDataSource.initialize().then(async () => {}).catch(error => console.log(error))
-
     }
 
     private middlewares(middleWares: { forEach: (arg0: (middleWare: any) => void) => void; }) {

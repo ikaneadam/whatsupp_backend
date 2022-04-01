@@ -19,7 +19,7 @@ const server = new BackendApp({
     ]
 })
 
-
+server.listen()
 // const io:Server = new Server(server.server,{cors: {origin: "*"}});
 //
 // io.on("connection", (socket:Socket) => {
