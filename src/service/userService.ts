@@ -13,7 +13,7 @@ class UserService {
 
 
     private loginSchema = joi.object({
-        "username": joi.string().min(6).required()
+        "username": joi.string().min(3).required()
     })
 
     public loginUser =  async (req: Request, res: Response) => {
@@ -30,7 +30,7 @@ class UserService {
     }
 
     private registerSchema = joi.object({
-        "username": joi.string().min(6).required()
+        "username": joi.string().min(3).required()
     })
 
     public registerUser =  async (req: Request, res: Response) => {
