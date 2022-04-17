@@ -8,4 +8,4 @@ RUN npm ci
 # copy all files
 COPY . .
 # build and serve application
-CMD npm run build && npm run serve:production
+CMD npm run start
