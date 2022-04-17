@@ -2,13 +2,12 @@ import BackendApp from "./backendApp";
 import cors from "cors";
 import express from "express";
 import {Server, Socket} from "socket.io";
-import { instrument } from "@socket.io/admin-ui"
 
 import UserController from "./controllers/userController";
 import chatSocket from "./sockets/ChatSocket";
 
 const server = new BackendApp({
-    port: 5000,
+    port: Number(process.env.PORT) | 5000,
     middleWares: [
         cors(),
         express.json(),
@@ -25,12 +24,5 @@ const io:Server = new Server(server.server,{cors: {origin: "*"}});
 io.on("connection", (socket:Socket) => {
     new chatSocket(io, socket);
 })
-
-instrument(io, {
-    auth: false
-});
-
-
-
 
 
