@@ -40,4 +40,4 @@ class BackendApp {
     }
 }
 
-export default BackendApp
+export default BackendApp;
