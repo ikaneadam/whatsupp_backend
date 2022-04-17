@@ -23,18 +23,21 @@ class ChatService {
     public getAllChatsSocket() {
         this.socket.on("getChats", async (username) => {
             const user = await this.chatDao.getUser(username)
-            console.log(username)
             const chats = await this.chatDao.getUserChats(user.UUID)
-            console.log(chats)
             this.socket.emit(`receiveChats-${username}`,chats)
-            console.log(chats)
         })
     }
 
     public createChatSocket(){
         this.socket.on("createChat", async (user_requester, user_receiver,chatName) => {
+            if(user_requester === user_receiver){
+                return
+            }
             const requester = await this.chatDao.getUser(user_requester)
             const receiver = await this.chatDao.getUser(user_receiver)
+            if( requester === null || receiver === null){
+                return
+            }
             const chat = await this.chatDao.createChat(requester, receiver, chatName)
             this.socket.emit(`receiveChat-${user_receiver}`, chat)
         })
@@ -43,8 +46,8 @@ class ChatService {
     public messagingSocket(){
         this.socket.on("sendMessage", async (user_requester, user_receiver,chatUUID, message) => {
             const requester = await this.chatDao.getUser(user_requester)
-            const receiver = await this.chatDao.getUser(user_receiver)
-            const insertedMessage = await this.chatDao.createMessage(requester, receiver, message, chatUUID)
+            const insertedMessage = await this.chatDao.createMessage(requester, message, chatUUID)
+            insertedMessage.chat = null
             this.socket.emit(`receiveMessage-${chatUUID}`, insertedMessage)
         })
     }

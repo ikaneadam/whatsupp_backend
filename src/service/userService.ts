@@ -24,6 +24,18 @@ class UserService {
         res.send({auth: true });
     }
 
+    public getUser =  async (req: Request, res: Response) => {
+        try {
+            const user = await this.repository.findOne({ where: { username: req.params.id } })
+
+            if(user === null){ return res.status(404).send() }
+            res.status(200).send(user)
+
+        } catch (error) {
+            res.status(500);
+        }
+    }
+
     public async doesUserExist(Username: string): Promise<Boolean> {
         const user = await this.repository.findOne({ where: { username: Username } })
         return user != null

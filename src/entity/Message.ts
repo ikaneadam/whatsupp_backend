@@ -12,9 +12,6 @@ export class Message {
     @Column({nullable: false})
     userName: string
 
-    @Column({nullable: false})
-    userNameReceiver: string
-
     @Column()
     isReceived: boolean
 

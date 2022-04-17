@@ -13,6 +13,7 @@ class UserController {
     }
 
     public routes(){
+        this.router.get(this.path, this.service.getUser)
         this.router.post(this.pathLogin, this.service.loginUser)
         this.router.post(this.pathRegister, this.service.registerUser)
     }

@@ -23,14 +23,13 @@ class ChatDAO {
         return chat
     }
     //todo teveel parameters
-    public async createMessage(requester: User, receiver: User, content: string, chatUUID: string){
+    public async createMessage(requester: User, content: string, chatUUID: string){
         const message = new Message()
         message.content = content
         message.chat = await this.getChat(chatUUID)
         message.isReceived = false
         message.TimeStamp = String(this.getLocalTime())
         message.userName = requester.username
-        message.userNameReceiver = receiver.username
         await this.messageRepository.save(message)
         return message
     }
@@ -60,7 +59,8 @@ class ChatDAO {
     }
 
     public async getChat(UUID: string): Promise<Chat> {
-        return await this.chatRepository.findOne({ where: { UUID: UUID }})
+        const chat = await this.chatRepository.find({  relations: ['users'], where: { UUID: UUID }})
+        return chat[0]
     }
 
     public async getMessage(UUID: string): Promise<Message> {
@@ -83,9 +83,18 @@ class ChatDAO {
     public async getOfflineMessages(username: string): Promise<Message[]>{
         return await this.messageRepository.find(
             {where: {
-                userNameReceiver: username,
+                // userNameReceiver: username,
                 isReceived: false}
             })
+    }
+
+    public async getChatUsers(chatUUID: string): Promise<User[]>{
+        const users = await AppDataSource.getRepository(User)
+            .createQueryBuilder("user")
+            .innerJoinAndSelect("user.chats", "chat")
+            .where(`chat.UUID= :id`,{id: chatUUID})
+            .getMany();
+        return users
     }
 
     public async getUserChats(userUUID: string): Promise<Chat[]>{
@@ -94,6 +103,7 @@ class ChatDAO {
             .leftJoin("chat.users", "user")
             .where(`user.UUID= :id`,{id: userUUID})
             .getMany();
+
         const chatWithMessages: Chat[] = []
         for(let chat of chats){
             chatWithMessages.push(await this.getChat(chat.UUID))

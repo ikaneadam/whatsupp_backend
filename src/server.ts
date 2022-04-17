@@ -8,7 +8,7 @@ import UserController from "./controllers/userController";
 import chatSocket from "./sockets/ChatSocket";
 
 const server = new BackendApp({
-    port: Number(process.env.PORT) | 5000,
+    port: 5000,
     middleWares: [
         cors(),
         express.json(),

@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="removed build command" />
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="changed hostname in app">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/userController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/userController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/chatDAO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/chatDAO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-source.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-source.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Chat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Chat.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Message.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ChatService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ChatService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/userService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/userService.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +76,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dao" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
-    <property name="ts.external.directory.path" value="D:\schoolBestanden\whatsupp_backend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="G:\schoolbestandenSSD\ikpmd\backend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -118,6 +130,11 @@
       <workItem from="1648727743194" duration="2476000" />
       <workItem from="1648744519107" duration="1948000" />
       <workItem from="1648808537076" duration="3864000" />
+      <workItem from="1650018773347" duration="10439000" />
+      <workItem from="1650101885324" duration="3974000" />
+      <workItem from="1650121152235" duration="283000" />
+      <workItem from="1650121459094" duration="7009000" />
+      <workItem from="1650183069642" duration="1839000" />
     </task>
     <task id="LOCAL-00001" summary="MAAK SHI ORM">
       <created>1648066696722</created>
@@ -163,7 +180,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MAAK SHI ORM" />
@@ -172,43 +188,5 @@
     <MESSAGE value="createChat emits tot reivechat" />
     <MESSAGE value="removed build command" />
     <option name="LAST_COMMIT_MESSAGE" value="removed build command" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1648718850531">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1648718850531" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1648816900459">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648816900459" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1648718689961">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1648718689961" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1648816975496">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1648816975496" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1648744563613">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1648744563613" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1648718805011">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1648718805011" />
   </component>
 </project>

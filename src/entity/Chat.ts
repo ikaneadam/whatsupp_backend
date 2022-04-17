@@ -10,7 +10,7 @@ export class Chat {
     @Column()
     chatName: string
 
-    @ManyToMany(() => User)
+    @ManyToMany(() => User,user => user.chats)
     @JoinTable()
     users: User[];
 
