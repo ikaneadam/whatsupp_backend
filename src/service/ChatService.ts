@@ -16,8 +16,8 @@ class ChatService {
         this.getAllChatsSocket()
         this.createChatSocket()
         this.messagingSocket()
-        this.getOfflineMessagesSocket()
-        this.setMessageOnReceivedSocket()
+        // this.getOfflineMessagesSocket()
+        // this.setMessageOnReceivedSocket()
     }
 
     public getAllChatsSocket() {
@@ -39,7 +39,9 @@ class ChatService {
                 return
             }
             const chat = await this.chatDao.createChat(requester, receiver, chatName)
-            this.socket.emit(`receiveChat-${user_receiver}`, chat)
+            const createdChat = await this.chatDao.getChat(chat.UUID)
+            console.log(createdChat)
+            this.socket.broadcast.emit(`receiveChat-${user_receiver}`, createdChat)
         })
     }
 
@@ -48,23 +50,23 @@ class ChatService {
             const requester = await this.chatDao.getUser(user_requester)
             const insertedMessage = await this.chatDao.createMessage(requester, message, chatUUID)
             insertedMessage.chat = null
-            this.socket.emit(`receiveMessage-${chatUUID}`, insertedMessage)
+            console.log(`receiveMessage-${chatUUID}`)
+            this.socket.broadcast.emit(`receiveMessage-${chatUUID}`, insertedMessage)
         })
     }
-
-    public getOfflineMessagesSocket(){
-        this.socket.on("getOfflineMessages", async (username) => {
-            const messages = await this.chatDao.getOfflineMessages(username)
-            this.socket.emit(`offlineMessages-${username}`,messages)
-            await this.chatDao.setMessagesReceived(messages)
-        })
-    }
-
-    public setMessageOnReceivedSocket(){
-        this.socket.on("setMessageReceived", async (messageUUID) => {
-            await this.chatDao.setMessageReceived(messageUUID)
-        })
-    }
+    // public getOfflineMessagesSocket(){
+    //     this.socket.on("getOfflineMessages", async (username) => {
+    //         const messages = await this.chatDao.getOfflineMessages(username)
+    //         this.socket.emit(`offlineMessages-${username}`,messages)
+    //         await this.chatDao.setMessagesReceived(messages)
+    //     })
+    // }
+    //
+    // public setMessageOnReceivedSocket(){
+    //     this.socket.on("setMessageReceived", async (messageUUID) => {
+    //         await this.chatDao.setMessageReceived(messageUUID)
+    //     })
+    // }
 }
 
 export default ChatService
