@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="yosylvio" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="7b3315a1-de5e-4efe-858f-2c1f0d84f714" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="1v015m111VTe33ZKrwAM7HK9zw9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\adam0\\WebstormProjects\\whatsupp_backend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\schoolbestandenSSD\whatsupp_backend\src\dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\schoolBestanden\whatsupp_backend\src\entity" />
+      <recent name="D:\schoolBestanden\whatsupp_backend\src\migration" />
+      <recent name="F:\ikfram\backend\whatsupp_backend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d0b5510-17ef-4cb9-a2be-32d910f23ac2" name="Default Changelist" comment="" />
+      <created>1625684011168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625684011168</updated>
+      <workItem from="1625684012240" duration="10504000" />
+      <workItem from="1625744539781" duration="3534000" />
+      <workItem from="1625781006784" duration="1916000" />
+      <workItem from="1625830302220" duration="4580000" />
+      <workItem from="1626083722820" duration="9720000" />
+      <workItem from="1647958403378" duration="2834000" />
+      <workItem from="1648039774536" duration="678000" />
+      <workItem from="1648040761511" duration="1817000" />
+      <workItem from="1648045385500" duration="17751000" />
+      <workItem from="1648149674605" duration="7691000" />
+      <workItem from="1648307036533" duration="13379000" />
+      <workItem from="1648545378343" duration="3458000" />
+      <workItem from="1648639414066" duration="3087000" />
+      <workItem from="1648727743194" duration="2476000" />
+      <workItem from="1648744519107" duration="1948000" />
+      <workItem from="1648808537076" duration="3864000" />
+      <workItem from="1650018773347" duration="10439000" />
+      <workItem from="1650101885324" duration="3974000" />
+      <workItem from="1650121152235" duration="283000" />
+      <workItem from="1650121459094" duration="7009000" />
+      <workItem from="1650183069642" duration="1839000" />
+      <workItem from="1665669943832" duration="596000" />
+      <workItem from="1665671397326" duration="367000" />
+    </task>
+    <task id="LOCAL-00001" summary="MAAK SHI ORM">
+      <created>1648066696722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648066696722</updated>
+    </task>
+    <task id="LOCAL-00002" summary="createChat emits tot reivechat">
+      <created>1648733293856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648733293856</updated>
+    </task>
+    <task id="LOCAL-00003" summary="createChat emits tot reivechat">
+      <created>1648809096921</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648809096921</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removed build command">
+      <created>1648816973428</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648816973428</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed console.logs">
+      <created>1665671752259</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665671752259</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MAAK SHI ORM" />
+    <MESSAGE value="getuserchatisn'tworkingyet" />
+    <MESSAGE value="everything works but it isn't using rooms yet" />
+    <MESSAGE value="createChat emits tot reivechat" />
+    <MESSAGE value="removed build command" />
+    <MESSAGE value="removed console.logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed console.logs" />
+  </component>
+</project>
